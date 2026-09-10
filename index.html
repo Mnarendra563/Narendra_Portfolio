@@ -355,7 +355,7 @@
         background: #777f8b;
       }
 
-      /* Core Focus */
+      /* Core Focus & Logos */
 
       .focus-section {
         background: var(--haze);
@@ -387,6 +387,22 @@
         border-color: #9e9e9e;
       }
 
+      .focus-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .focus-icon {
+        width: 38px;
+        height: 38px;
+        transition: transform 0.3s ease;
+      }
+
+      .focus-card:hover .focus-icon {
+        transform: scale(1.1) rotate(5deg);
+      }
+
       .focus-number {
         color: #858585;
         font-family: var(--font-mono);
@@ -395,7 +411,7 @@
 
       .focus-tag {
         width: fit-content;
-        margin-top: 54px;
+        margin-top: 48px;
         padding: 14px 18px;
         border: 1px solid #d3d3d3;
         border-radius: 9px;
@@ -1183,8 +1199,8 @@
         <a href="#home" class="logo">NM.</a>
 
         <nav class="nav-links">
-          <a href="#focus">Focus</a>
           <a href="#about">About</a>
+          <a href="#focus">Focus</a>
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
@@ -1240,71 +1256,10 @@
         <div class="hero-scroll">Scroll to explore</div>
       </section>
 
-      <!-- Core Focus -->
-      <section class="focus-section" id="focus">
-        <div class="container">
-          <div class="eyebrow">01 / Core Focus</div>
-
-          <h2 class="section-title">
-            Tools that turn ideas into
-            <span class="cursive">products.</span>
-          </h2>
-
-          <p class="section-description">
-            A focused stack for building modern full-stack applications from
-            interface to database.
-          </p>
-
-          <div class="focus-grid">
-            <article class="focus-card">
-              <span class="focus-number">01</span>
-
-              <div class="focus-tag">UI</div>
-
-              <h3>React.js</h3>
-
-              <p>
-                Responsive single-page applications and reusable interfaces.
-              </p>
-            </article>
-
-            <article class="focus-card">
-              <span class="focus-number">02</span>
-
-              <div class="focus-tag">API</div>
-
-              <h3>Django / DRF</h3>
-
-              <p>Structured backend systems and clean RESTful APIs.</p>
-            </article>
-
-            <article class="focus-card">
-              <span class="focus-number">03</span>
-
-              <div class="focus-tag">DB</div>
-
-              <h3>PostgreSQL</h3>
-
-              <p>Reliable data models, relationships, and optimized queries.</p>
-            </article>
-
-            <article class="focus-card">
-              <span class="focus-number">04</span>
-
-              <div class="focus-tag">AUTH</div>
-
-              <h3>JWT</h3>
-
-              <p>Secure authentication flows for connected applications.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <!-- About -->
       <section class="about-section dark-section" id="about">
         <div class="container">
-          <div class="eyebrow dark-eyebrow">02 / About</div>
+          <div class="eyebrow dark-eyebrow">01 / About</div>
 
           <div class="about-layout">
             <h2 class="about-heading">
@@ -1352,6 +1307,144 @@
                 Data retrieval improvement in CMS project
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Focus -->
+      <section class="focus-section" id="focus">
+        <div class="container">
+          <div class="eyebrow">02 / Core Focus</div>
+
+          <h2 class="section-title">
+            Tools that turn ideas into
+            <span class="cursive">products.</span>
+          </h2>
+
+          <p class="section-description">
+            A focused stack for building modern full-stack applications from
+            interface to database.
+          </p>
+
+          <div class="focus-grid">
+            <!-- Focus Card 01: React.js -->
+            <article class="focus-card">
+              <div class="focus-header">
+                <span class="focus-number">01</span>
+                <div class="focus-icon">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="-10.5 -9.45 21 18.9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="0" cy="0" r="2" fill="#61DAFB" />
+                    <g stroke="#61DAFB" stroke-width="1.2" fill="none">
+                      <ellipse rx="10" ry="3.8" />
+                      <ellipse rx="10" ry="3.8" transform="rotate(60)" />
+                      <ellipse rx="10" ry="3.8" transform="rotate(120)" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="focus-tag">UI</div>
+              <h3>React.js</h3>
+              <p>
+                Responsive single-page applications and reusable interfaces.
+              </p>
+            </article>
+
+            <!-- Focus Card 02: Django / DRF -->
+            <article class="focus-card">
+              <div class="focus-header">
+                <span class="focus-number">02</span>
+                <div class="focus-icon">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="100" height="100" rx="20" fill="#092E20" />
+                    <text
+                      x="50%"
+                      y="54%"
+                      font-family="Arial, sans-serif"
+                      font-weight="bold"
+                      font-size="52"
+                      fill="#fff"
+                      text-anchor="middle"
+                      dominant-baseline="middle"
+                    >
+                      dj
+                    </text>
+                  </svg>
+                </div>
+              </div>
+              <div class="focus-tag">API</div>
+              <h3>Django / DRF</h3>
+              <p>Structured backend systems and clean RESTful APIs.</p>
+            </article>
+
+            <!-- Focus Card 03: PostgreSQL -->
+            <article class="focus-card">
+              <div class="focus-header">
+                <span class="focus-number">03</span>
+                <div class="focus-icon">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#336791"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    <path d="M3 12v0c0 1.66 4 3 9 3s9-1.34 9-3v0"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="focus-tag">DB</div>
+              <h3>PostgreSQL</h3>
+              <p>Reliable data models, relationships, and optimized queries.</p>
+            </article>
+
+            <!-- Focus Card 04: JWT -->
+            <article class="focus-card">
+              <div class="focus-header">
+                <span class="focus-number">04</span>
+                <div class="focus-icon">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="100" height="100" rx="20" fill="#2b7fff" />
+                    <text
+                      x="50%"
+                      y="55%"
+                      font-family="Arial, sans-serif"
+                      font-weight="bold"
+                      font-size="34"
+                      fill="#fff"
+                      text-anchor="middle"
+                      dominant-baseline="middle"
+                    >
+                      JWT
+                    </text>
+                  </svg>
+                </div>
+              </div>
+              <div class="focus-tag">AUTH</div>
+              <h3>JWT</h3>
+              <p>Secure authentication flows for connected applications.</p>
+            </article>
           </div>
         </div>
       </section>
